@@ -51,5 +51,5 @@ val drawing = Picture {
 val pic = effect(fltr2) * effect(fltr1) -> drawing
 draw(pic)
 ```
-
+![example1](./doc/example1.png)
 
