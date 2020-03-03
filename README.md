@@ -1,10 +1,10 @@
 This repo contains code and instructions to support Neural Style Transfer in Kojo.
 
-Neural Style transfer in Kojo is based on Pytorch and the [fast neural style](https://github.com/pytorch/examples/tree/master/fast_neural_style) example in the Pytorch examples repo.
+Neural Style transfer in Kojo is based on [PyTorch](https://pytorch.org/) and builds upon the [fast neural style](https://github.com/pytorch/examples/tree/master/fast_neural_style) example in the PyTorch examples repo.
 
 ## Instructions to get going (WIP)
-* Install pytorch using miniconda
-* Install JEP
+* Install PyTorch using [miniconda](https://docs.conda.io/en/latest/miniconda.html)
+* Install [JEP](https://github.com/ninia/jep)
 * Copy libk/jep-3.9.0.jar from this repo into ~/.kojo/lite/libk
 * Copy include/neural-style.kojo from this repo into ~/kojo-includes (or wherever)
 * Copy the style_transfer dir from this repo into ~/work (or wherever)
