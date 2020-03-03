@@ -28,14 +28,6 @@ val fltr2 = new NeuralStyleFilter(
     "/home/lalit/work/kojo_neural_style/neural_style/saved_models/udnie.pth"
 )
 
-val size = 100
-def S = Picture {
-    repeat(4) {
-        forward(size)
-        right()
-    }
-}
-
 val drawing = Picture {
     setPenColor(black)
     setPenThickness(10)
