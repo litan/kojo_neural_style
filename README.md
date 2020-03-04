@@ -26,15 +26,13 @@ Here's an example:
 // #include ~/kojo-includes/neural-style
 cleari()
 
-val fltr1 = new NeuralStyleFilter(
-    "/home/lalit/work/kojo_neural_style/neural_style/run.py",
-    "/home/lalit/work/kojo_neural_style/neural_style/saved_models/mosaic.pth"
-)
+val neuralStyleDir = "/home/lalit/work/kojo_neural_style"
+val runScript = s"$neuralStyleDir/neural_style/run.py"
+val mosaicModel = s"$neuralStyleDir/neural_style/saved_models/mosaic.pth"
+val udnieModel = s"$neuralStyleDir/neural_style/saved_models/udnie.pth"
 
-val fltr2 = new NeuralStyleFilter(
-    "/home/lalit/work/kojo_neural_style/neural_style/run.py",
-    "/home/lalit/work/kojo_neural_style/neural_style/saved_models/udnie.pth"
-)
+val fltr1 = new NeuralStyleFilter(runScript, mosaicModel)
+val fltr2 = new NeuralStyleFilter(runScript, udnieModel)
 
 val drawing = Picture {
     setPenColor(black)
@@ -51,5 +49,6 @@ val drawing = Picture {
 val pic = effect(fltr2) * effect(fltr1) -> drawing
 draw(pic)
 ```
+
 ![example1](./doc/example1.png)
 
