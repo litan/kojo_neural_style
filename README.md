@@ -10,12 +10,14 @@ Neural Style transfer in Kojo is based on [PyTorch](https://pytorch.org/) and bu
   * `conda activate pytorch`
 * Install [JEP](https://github.com/ninia/jep)
   * `sudo apt install build-essential`
-  * Download JDK from `https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u242-b08/OpenJDK8U-jdk_x64_linux_hotspot_8u242b08.tar.gz` and then extract from `tar.gz` file into, say, `jdk_dir`.
+  * Download JDK from `https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u242-b08/OpenJDK8U-jdk_x64_linux_hotspot_8u242b08.tar.gz` 
+  * Extract the JDK into, say, `jdk_dir`.
   * `export JAVA_HOME=<jdk_dir>`
   * `pip install jep==3.9.0` in the `pytorch` conda environment activated above.
-* Copy libk/jep-3.9.0.jar from this repo into ~/.kojo/lite/libk
-* Copy include/neural-style.kojo from this repo into ~/kojo-includes (or wherever)
-* Copy the style_transfer dir from this repo into ~/work (or wherever)
+* `git clone https://github.com/litan/kojo_neural_style.git` under, say, `~/work`.
+* `cp ~/work/kojo_neural_style/libk/jep-3.9.0.jar ~/.kojo/lite/libk`
+* `mkdir ~/kojo-includes`
+* `cp ~/work/kojo_neural_style/include/neural-style.kojo ~/kojo-includes`
 * Add the following line (suitably adapted) to ~/.kojo/lite/kojo.properties  
 `library.path=/home/lalit/miniconda3/envs/pytorch/lib:/home/lalit/miniconda3/envs/pytorch/lib/python3.8/site-packages/jep`
 
