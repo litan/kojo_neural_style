@@ -1,4 +1,11 @@
-class NeuralStyleFilter(script: String, model: String) extends ImageOp {
+object NeuralStyle {
+    var root = ""
+}
+
+class NeuralStyleFilter(model: String) extends ImageOp {
+    import NeuralStyle.root
+    require(root != "", "First set NeuralStyle.root")
+    val script = s"$root/neural_style/run.py"
     import java.awt.image.BufferedImage
     import jep.SharedInterpreter
     import java.io.File
