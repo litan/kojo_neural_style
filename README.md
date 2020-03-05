@@ -8,7 +8,6 @@ Neural Style transfer in Kojo is based on [PyTorch](https://pytorch.org/) and bu
   * `conda create --name pytorch`
   * `conda activate pytorch`
   * `conda install pytorch torchvision cpuonly -c pytorch`
-  * `conda activate pytorch`
 * Install [JEP](https://github.com/ninia/jep)
   * `sudo apt install build-essential`
   * Download JDK from `https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u242-b08/OpenJDK8U-jdk_x64_linux_hotspot_8u242b08.tar.gz` 
