@@ -21,20 +21,19 @@ Neural Style transfer in Kojo is based on [PyTorch](https://pytorch.org/) and bu
 * Add the following line (suitably adapted) to ~/.kojo/lite/kojo.properties  
 `library.path=/home/lalit/miniconda3/envs/pytorch/lib:/home/lalit/miniconda3/envs/pytorch/lib/python3.8/site-packages/jep`
 
-At this point, you are good to go ;).
+At this point, you are good to go ;) - using [Kojo Pictures, filters, and effects](http://docs.kogics.net/tutorials/pictures-intro.html).
 
 Here's an example:
 ```scala
-// #include ~/kojo-includes/neural-style
+// #include ~/kojo-includes/neural-style.kojo
+NeuralStyle.root = "/home/lalit/work/kojo_neural_style"
+val styleModelDir = s"${NeuralStyle.root}/neural_style/saved_models"
+val mosaicModel = s"$styleModelDir/mosaic.pth"
+val udnieModel = s"$styleModelDir/udnie.pth"
+
 cleari()
-
-val neuralStyleDir = "/home/lalit/work/kojo_neural_style"
-val runScript = s"$neuralStyleDir/neural_style/run.py"
-val mosaicModel = s"$neuralStyleDir/neural_style/saved_models/mosaic.pth"
-val udnieModel = s"$neuralStyleDir/neural_style/saved_models/udnie.pth"
-
-val fltr1 = new NeuralStyleFilter(runScript, mosaicModel)
-val fltr2 = new NeuralStyleFilter(runScript, udnieModel)
+val fltr1 = new NeuralStyleFilter(mosaicModel)
+val fltr2 = new NeuralStyleFilter(udnieModel)
 
 val drawing = Picture {
     setPenColor(black)
