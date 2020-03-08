@@ -25,7 +25,7 @@ Neural Style transfer in Kojo is based on [PyTorch](https://pytorch.org/) and bu
 
 At this point, you are good to go ;).
 
-Here's an example (using [Kojo Pictures, filters, and effects](http://docs.kogics.net/tutorials/pictures-intro.html)):
+Here's an example (using [Kojo Pictures, filters, and effects](http://docs.kogics.net/tutorials/pictures-intro.html#picture-effects)):
 ```scala
 // #include ~/kojo-includes/neural-style.kojo
 NeuralStyle.root = "/home/lalit/work/kojo_neural_style"
