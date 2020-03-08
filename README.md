@@ -23,9 +23,9 @@ Neural Style transfer in Kojo is based on [PyTorch](https://pytorch.org/) and bu
 * Add the following line (suitably adapted) to ~/.kojo/lite/kojo.properties  
 `library.path=/home/lalit/miniconda3/envs/pytorch/lib:/home/lalit/miniconda3/envs/pytorch/lib/python3.8/site-packages/jep`
 
-At this point, you are good to go ;) - using [Kojo Pictures, filters, and effects](http://docs.kogics.net/tutorials/pictures-intro.html).
+At this point, you are good to go ;).
 
-Here's an example:
+Here's an example (using [Kojo Pictures, filters, and effects](http://docs.kogics.net/tutorials/pictures-intro.html)):
 ```scala
 // #include ~/kojo-includes/neural-style.kojo
 NeuralStyle.root = "/home/lalit/work/kojo_neural_style"
