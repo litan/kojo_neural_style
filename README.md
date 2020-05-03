@@ -6,6 +6,7 @@ Neural Style transfer in Kojo is based on [PyTorch](https://pytorch.org/) and bu
 *Note:*
 * *The instructions are for Linux, for now. A similar set of steps should also work for Windows or Mac.*
 * *This feature has been tested with PyTorch 1.4, but should work with later versions, too*
+---
 
 * Install PyTorch using [miniconda](https://docs.conda.io/en/latest/miniconda.html)
   * Install miniconda
