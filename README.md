@@ -3,7 +3,9 @@ This repo contains code and instructions to support Neural Style Transfer in Koj
 Neural Style transfer in Kojo is based on [PyTorch](https://pytorch.org/) and builds upon the [fast neural style](https://github.com/pytorch/examples/tree/master/fast_neural_style) example in the PyTorch examples repo.
 
 ## Instructions to get going
-*Note - the instructions are for Linux, for now. A similar set of steps should also work for Windows or Mac.*
+*Note:*
+* *The instructions are for Linux, for now. A similar set of steps should also work for Windows or Mac.*
+* *This feature has been tested with PyTorch 1.4, but should work with later versions, too*
 
 * Install PyTorch using [miniconda](https://docs.conda.io/en/latest/miniconda.html)
   * Install miniconda
@@ -20,7 +22,7 @@ Neural Style transfer in Kojo is based on [PyTorch](https://pytorch.org/) and bu
 * `cp ~/work/kojo_neural_style/libk/jep-3.9.0.jar ~/.kojo/lite/libk`
 * `mkdir ~/kojo-includes`
 * `cp ~/work/kojo_neural_style/include/neural-style.kojo ~/kojo-includes`
-* Add the following line (suitably adapted) to ~/.kojo/lite/kojo.properties  
+* Add the following line (suitably adapted) to ~/.kojo/lite/kojo.properties
 `library.path=/home/lalit/miniconda3/envs/pytorch/lib:/home/lalit/miniconda3/envs/pytorch/lib/python3.8/site-packages/jep`
 
 At this point, you are good to go ;).
