@@ -20,6 +20,7 @@ Neural Style transfer in Kojo is based on [PyTorch](https://pytorch.org/) and bu
   * `export JAVA_HOME=<jdk_dir>`
   * `pip install jep==3.9.0` in the `pytorch` conda environment activated above.
 * `git clone https://github.com/litan/kojo_neural_style.git` under, say, `~/work`.
+* `mkdir ~/.kojo/lite/libk`
 * `cp ~/work/kojo_neural_style/libk/jep-3.9.0.jar ~/.kojo/lite/libk`
 * `mkdir ~/kojo-includes`
 * `cp ~/work/kojo_neural_style/include/neural-style.kojo ~/kojo-includes`
